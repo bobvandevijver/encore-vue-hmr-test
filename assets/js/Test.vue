@@ -1,12 +1,7 @@
 <template>
   <div>
-    <h1>Vue is </h1>
-
-    <h2>{{counter}}</h2>
-
-    <div>
-      <button @click="counter++">Add 1</button>
-    </div>
+    <h1>Counter Hot Reloaded</h1>
+    <p>Current count: {{count}}</p>
   </div>
 </template>
 
@@ -15,13 +10,25 @@
 
     @Component
     export default class Test extends Vue {
-        protected counter: number = 0;
+        protected count: number = 0;
+
+        private handle!: number;
+
+        protected mounted() {
+            this.handle = setInterval(() => {
+                this.count++;
+            }, 1000);
+        }
+
+        protected destroyed() {
+            clearInterval(this.handle);
+        }
     }
 </script>
 
 <style lang="css">
   h1 {
-    background-color: green;
+    background-color: white;
   }
 </style>
 
