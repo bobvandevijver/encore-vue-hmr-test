@@ -1,6 +1,6 @@
-import TestContainer from './TestContainer.vue';
+import Test from './Test.vue';
 import Vue from 'vue';
 
 new Vue({
-    render: (h) => h(TestContainer)
+    render: (h) => h(Test)
 }).$mount('#vue');
