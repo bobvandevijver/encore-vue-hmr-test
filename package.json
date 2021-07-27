@@ -1,19 +1,19 @@
 {
     "devDependencies": {
-        "@babel/core": "^7.11.0",
-        "@babel/plugin-proposal-decorators": "^7.10.5",
-        "@babel/preset-env": "^7.11.0",
-        "@symfony/webpack-encore": "^0.30.0",
-        "@types/webpack-env": "^1.15.1",
-        "babel-loader": "^8.0.6",
-        "babel-preset-typescript-vue": "^1.1.1",
-        "core-js": "^3.0.0",
-        "regenerator-runtime": "^0.13.2",
-        "ts-loader": "^5.3.0",
-        "typescript": "^3.8.3",
-        "vue-loader": "^15.9.0",
-        "vue-template-compiler": "^2.6.11",
-        "webpack-notifier": "^1.6.0"
+        "@babel/core": "7.14.8",
+        "@babel/plugin-proposal-decorators": "7.14.5",
+        "@babel/preset-env": "7.14.8",
+        "@symfony/webpack-encore": "1.5.0",
+        "@types/webpack-env": "1.16.2",
+        "babel-loader": "8.2.2",
+        "babel-preset-typescript-vue": "1.1.1",
+        "core-js": "3.15.2",
+        "regenerator-runtime": "0.13.9",
+        "ts-loader": "9.2.4",
+        "typescript": "4.3.5",
+        "vue-loader": "15.9.6",
+        "vue-template-compiler": "2.6.14",
+        "webpack-notifier": "1.13.0"
     },
     "license": "UNLICENSED",
     "private": true,
@@ -24,8 +24,11 @@
         "build": "encore production --progress"
     },
     "dependencies": {
-        "vue": "^2.6.11",
-        "vue-class-component": "^7.2.3",
-        "vue-property-decorator": "^8.4.0"
+        "vue": "2.6.14",
+        "vue-class-component": "7.2.6",
+        "vue-property-decorator": "9.1.2"
+    },
+    "resolutions": {
+        "vue-template-compiler": "2.6.14"
     }
 }
